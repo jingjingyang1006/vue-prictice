@@ -38,6 +38,7 @@ npm run build
 > 对于简单请求，浏览器直接发出CORS请求。头信息之中，增加一个Origin字段
 > 服务器端需要指定 Access-Control-Allow-Credentials：true
 > 前端必须在Ajax请求中 设置 xhr.withCredentials = true;
+> vue 的写法：在入口文件（main.js）进行全局配置 Vue.http.options.credentials = true;
 
 ### 2018年4月17日
 
