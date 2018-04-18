@@ -37,10 +37,23 @@ npm run build
 #### 请求流程
 > 对于简单请求，浏览器直接发出CORS请求。头信息之中，增加一个Origin字段
 > 服务器端需要指定 Access-Control-Allow-Credentials：true
-> 前端必须在Ajax请求中 设置 xhr.withCredentials = true;
-> vue 的写法：在入口文件（main.js）进行全局配置 Vue.http.options.credentials = true;
+ + 前端必须在Ajax请求中 设置 xhr.withCredentials = true;
+ + vue 的写法：在入口文件（main.js）进行全局配置 Vue.http.options.credentials = true;
 
 ### 2018年4月17日
+* vuex
+    state 使用单一状态树，唯一的数据源
++ toString() 来获取每个对象的类型
++ toLocaleString() 返回该日期对象的字符串
++ toString 转换数据类型 var toString = Object.prototype.toString();需要Function.prototype.call()的形式来调用，传递要检查的对象作为第一个参数,成为thisArg
+
+    + toString.call(new Date); [object Date]
+    + toString.call(new String); [object String]
+toLocaleString(local, options) // 首先判断locale语言环境，指定的话，当返回当前语言环境的格式，设置(options)格式化的字符串
+
+
+
+
 
 
 
